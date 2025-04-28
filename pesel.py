@@ -1,5 +1,5 @@
-import datetime
-import babel.dates
+# import datetime
+# import babel.dates
 import random
 
 
@@ -51,7 +51,7 @@ class Pesel:
 
     def is_valid(self, number: str, gender: str):
 
-        if number[-2] in [0, 2, 4, 6, 8]:
+        if number[-2] in ['0', '2', '4', '6', '8']:
             number_gender = 'F'
         else:
             number_gender = 'M'
